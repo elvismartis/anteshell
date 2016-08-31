@@ -1,5 +1,5 @@
 #!/bin/bash
-# Anteshell v1.0 is a script to automate small molecule parameter building for AMBER.
+echo "Anteshell v1.0 is a script to automate small molecule parameter building for AMBER."
 # The entire code is written in Bourne Shell.
 # Copyright (c) 2016 [Elvis Martis]
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "GMXSTARK v1.0"), to deal
@@ -13,7 +13,7 @@
 # All bug reports and suggestions can be sent to elvis.martis@bcp.edu.in with subject line "GMXSTARK v1.0 bug report"
 # If the use of this script results in a publication, kindly acknowledge the use for the sake promotion of this code
 # Acknowledgement may be written as "The Authors acknowledge the use of "Anteshell v1.0" for generating the input files"
-echo "This is a script to run antechamber and parmchk"
+echo "This script will run antechamber and parmchk"
 echo "Please report any bug at elvis_bcp@elvismartis.in"
 read -p "Enter you working directory [Enter the full path for example /home/user/....]: " Wor_dir
 cd $Wor_dir
@@ -30,17 +30,17 @@ read -p "Enter the desired atom_type [default is gaff] : " atmty
 read -p "Enter three letter residue code you wish [in capitals] : " resnm
 echo "Hope you have double check Everything"
 antechamber -i ${imol2}.$ifor \
-	        -o ${omol2}_out.$ofor \
-	        -fi $ifor \
+	    -o ${omol2}_out.$ofor \
+	    -fi $ifor \
             -fo $ofor \
             -s $ver \
             -nc $chr \
-	        -c $amchr \
-	        -at $atmty \
+	    -c $amchr \
+	    -at $atmty \
             -rn $resnm && 
 parmchk -i ${omol2}_out.$ofor \
-	    -f $ofor \
-	    -o ${omol2}_out.frcmod
+	-f $ofor \
+        -o ${omol2}_out.frcmod
 ls *.frcmod
 echo "There are Five RULES for Success. --Meenakshi Venkataraman"
 exit
