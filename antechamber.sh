@@ -42,6 +42,6 @@ parmchk -i ${omol2}_out.$ofor \
 	-f $ofor \
         -o ${omol2}_out.frcmod
 ls *.frcmod
-echo "There are Five RULES for Success. --Meenakshi Venkataraman"
+echo "Experience is what you get when you didn't get what you wanted. — Wanda"
 exit
 
