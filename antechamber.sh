@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Anteshell v1.0 is a script to automate small molecule parameter building for AMBER."
 # The entire code is written in Bourne Shell.
-# Copyright (c) 2016 [Elvis Martis]
+# Copyright (c) 2017 [Elvis Martis]
 # Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "GMXSTARK v1.0"), to deal
 # in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -14,7 +14,7 @@ echo "Anteshell v1.0 is a script to automate small molecule parameter building f
 # If the use of this script results in a publication, kindly acknowledge the use for the sake promotion of this code
 # Acknowledgement may be written as "The Authors acknowledge the use of "Anteshell v1.0" for generating the input files"
 echo "This script will run antechamber and parmchk"
-echo "Please report any bug at elvis_bcp@elvismartis.in"
+echo "Please report any bug at elvis_bcp@elvismartis.in or elvis.martis@bcp.edu.in"
 read -p "Enter you working directory [Enter the full path for example /home/user/....]: " Wor_dir
 cd $Wor_dir
 echo $pwd
